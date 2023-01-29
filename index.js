@@ -9,9 +9,9 @@ function handClicked() {
     //   k - crash
     //   l - kick
 
-    var button = this
-    var text = button.innerHTML
-    var audio;
+    const button = this
+    const text = button.innerHTML
+    let audio;
     switch (text) {
         case "w":
             audio = new Audio('sounds/tom-1.mp3')
