@@ -45,7 +45,11 @@ function handClicked() {
 // The code below selects all the buttons and adds an event listener to it.
 // since querySelectorAll returns a list of elements, we use for each to 
 // iterate through the list and add an event listener to each element.
-document.querySelectorAll("button").forEach(function (button) {
+// For each is an erray method runs a function for each element in the array
+function attachClick (button) {
     button.addEventListener("click", handClicked);
-})
+}  
 
+document.querySelectorAll("button").forEach(attachClick)
+
+    
